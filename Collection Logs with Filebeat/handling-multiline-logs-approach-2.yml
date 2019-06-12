@@ -1,0 +1,13 @@
+filebeat.inputs:
+  - type: log
+    enabled: true
+    paths:
+      - /path/to/logstash/event-data/java_errors.log
+
+    multiline.pattern: '^\b(?:[Jj]an(?:uary|uar)?|[Ff]eb(?:ruary|ruar)?|[Mm](?:a|ä)?r(?:ch|z)?|[Aa]pr(?:il)?|[Mm]a(?:y|i)?|[Jj]un(?:e|i)?|[Jj]ul(?:y)?|[Aa]ug(?:ust)?|[Ss]ep(?:tember)?|[Oo](?:c|k)?t(?:ober)?|[Nn]ov(?:ember)?|[Dd]e(?:c|z)(?:ember)?)\b (?:(?:0[1-9])|(?:[12][0-9])|(?:3[01])|[1-9]), 20(\d\d){1,2} (?:2[0123]|[01]?[0-9]):?(?:[0-5][0-9])(?::?(?:(?:[0-5]?[0-9]|60)(?:[:.,][0-9]+)?)) (?:AM|PM)'
+
+    # This pattern is much simpler than the above, and is still quite flexible. It performs better and is much easier to maintain.
+    #multiline.pattern: '^[a-zA-Z]+\s[0-9]{1,2},\s[0-9]{4}\s[0-9]{1,2}:[0-9]{1,2}:[0-9]{1,2}\s(?:AM|am|PM|pm)'
+
+    multiline.negate: true
+    multiline.match: after

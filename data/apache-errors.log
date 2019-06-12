@@ -1,0 +1,9 @@
+[Wed Sep 20 09:46:23 2017] [error] [client 184.252.108.229] Directory index forbidden by rule: /home/test/
+[Wed Sep 20 11:54:34 2017] [error] [client 117.90.88.26] Directory index forbidden by rule: /var/www/html/test/
+[Wed Sep 20 12:25:55 2017] [error] [client 135.231.162.197] Client sent malformed Host header
+[Wed Sep 20 12:02:01 2017] [info] [client 57.85.164.98] File does not exist: /var/www/html/robots.txt
+[Wed Sep 20 13:47:11 2017] [error] [client 78.133.44.127] Connection refused: proxy: HTTP: attempt to connect to 127.0.0.1:8080 (localhost) failed
+[Wed Sep 20 14:52:31 2017] [info] [client 173.163.21.50] File does not exist: /var/www/html/favicon.ico
+[Wed Sep 20 17:41:21 2017] [error] [client 34.59.50.166] Client denied by server configuration: /var/www/html/.htaccess
+[Wed Sep 20 19:36:04 2017] [info] [client 91.59.108.75] File does not exist: /var/www/html/robots.txt
+[Wed Sep 20 20:55:38 2017] [error] [client 154.6.206.54] Directory index forbidden by rule: /home/test/
