@@ -1,1 +1,1 @@
-This repository contains all of the configuration files used within the [Data Processing with Logstash course](https://l.codingexplained.com/course/logstash?src=github).
+This repository contains all of the configuration files used within the [Data Processing with Logstash course](https://l.codingexplained.com/r/logstash-course?src=github).
